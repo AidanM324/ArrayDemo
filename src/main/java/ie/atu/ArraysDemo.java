@@ -1,5 +1,6 @@
 package ie.atu;
 
+import java.util.Scanner;
 public class ArraysDemo {
 
 
@@ -33,5 +34,12 @@ public class ArraysDemo {
         System.out.println("Element at index 8: " + anArray[8]);
         System.out.println("Element at index 9: " + anArray[9]);
 
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter new value for 10th array");
+            anArray[10] = scanner.nextInt();
+        }catch (Exception e){
+            System.out.println("anArray[10] is defined, ");
+        }
     }
 }
